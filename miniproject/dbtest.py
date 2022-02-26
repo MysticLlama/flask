@@ -29,4 +29,11 @@ if __name__ =="__main__":
 	c= conn.cursor()
 	describe_db()
 	
+	
+	c.execute("insert into user values (3,'dudebro','dudebro@email.com','img','passwerd')")
+	
+	for row in c.execute("select * from user"):
+		print(row)
+	
+	
 
