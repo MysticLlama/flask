@@ -30,7 +30,7 @@ if __name__ =="__main__":
 	describe_db()
 	
 	
-	c.execute("insert into user values (3,'dudebro','dudebro@email.com','img','passwerd')")
+	#c.execute("insert into user values (3,'dudebro','dudebro@email.com','img','passwerd')")
 	
 	for row in c.execute("select * from user"):
 		print(row)
