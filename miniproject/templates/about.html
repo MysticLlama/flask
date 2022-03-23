@@ -1,4 +1,8 @@
 {% extends "layout.html" %}
 {% block content %}
     <h1>About Page</h1>
+	{% for item in text %}
+	
+		<p>{{item}}</p>
+	{% endfor %}
 {% endblock content %}
